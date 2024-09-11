@@ -13,5 +13,5 @@ Verb Tenses é um aplicativo web que auxilia no aprendizado dos tempos verbais e
 - ``CSS``
 
 
-## 📁 Acesso ao projeto
-Você pode acessar os arquivos do projeto clicando [aqui](https://juliamofardinii.github.io/site-verb-tenses/).
+## 💻 Acesso ao projeto
+Você pode acessar o projeto clicando [aqui](https://juliamofardinii.github.io/site-verb-tenses/).
