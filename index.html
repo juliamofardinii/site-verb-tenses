@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verb Tenses World</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface"></div>
+        <nav class="menu-desktop">
+            <div class="menu-left">
+                <ul>
+                    <li><a href="#inicio">Verb Tenses World </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="image-container">
+            <img src="img/livros.jpg" alt="">
+        </section>
+        <section class="input">
+            <input type="text" placeholder="Digite o tempo verbal" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Simple Present</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Simple Present (Presente Simples) descreve uma ação que ocorre regularmente ou um fato geral.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Present Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    É um tempo verbal em inglês utilizado para descrever ações que estão acontecendo no momento em que se fala. É como se você pegasse um instantâneo de uma ação em progresso.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Simple Past</a>
+                </h2>
+                <p class="descricao-meta">
+                    É um tempo verbal em inglês que utilizamos para descrever ações que aconteceram e se completaram em um momento específico no passado. É como se estivéssemos contando uma história, narrando fatos que já ocorreram.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Past Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Past Continuous (Passado Contínuo), também chamado de Past Progressive (Passado Progressivo), expressa uma ação contínua que ocorreu no passado, ou seja, uma ação que estava ocorrendo em um momento que já passou.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Simple Future</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Simple Future (Futuro Simples) expressa ações que irão ocorrer, ou seja, que ainda não aconteceram.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Future Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Future Continuous expressa ações contínuas que acontecerão no futuro. Em outras palavras, podemos dizer que ele descreve um fato que estará acontecendo em um momento específico no futuro.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Present Perfect Simple</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Present Perfect Simple (Presente Perfeito Simples) expressa ações influenciadas pelo presente e que ainda estão acontecendo ou que terminaram recentemente.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Present Perfect Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    Ele expressa ações contínuas que iniciaram no passado e continuam até o presente ou que terminaram há pouco tempo.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Past Perfect Simple</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Past Perfect Simple (Passado Perfeito Simples) expressa ações no passado que ocorreram antes de outra ação no passado.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Past Perfect Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    Indica ações contínuas no passado, que ocorreram antes de outra ação no passado.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Future Perfect</a>
+                </h2>
+                <p class="descricao-meta">
+                    O Future Perfect (Futuro Perfeito) expressa ações que estarão terminadas em um determinado tempo futuro.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="item-resultado">
+                <h2>
+                    <a href="#" target="_blank">Future Perfect Continuous</a>
+                </h2>
+                <p class="descricao-meta">
+                    Expressa a continuação de ações que serão terminadas em determinado tempo no futuro.
+                </p>
+                <div class="btn-pesquisa">
+                    <a class="btn-pesquisa-link" href="#">
+                        <button>Saber Mais</button>
+                    </a>
+                </div>
+            </div>
+            
+
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Júlia Mofardini</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

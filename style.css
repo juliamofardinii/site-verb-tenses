@@ -1,0 +1,294 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --azul-titulo: #222831;
+    --azul-botoes: hsl(210, 32%, 28%);
+    --branco-padrao: #F5F7F8; /* Definição adicionada */
+}
+
+/* Estiliza o corpo da página */
+body {
+    overflow-x: hidden; /* Oculta o overflow horizontal, se houver */
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    background-color: var(--branco-padrao);
+    width: 100%;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+/* Estiliza o menu do cabeçalho */
+header nav.menu-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu à esquerda */
+header nav.menu-desktop .menu-left {
+    margin-right: auto;
+}
+
+/* Estiliza os itens da lista do menu */
+header nav.menu-desktop ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+/* Estiliza os itens do menu */
+header nav.menu-desktop ul li {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Estiliza os links do menu */
+header nav.menu-desktop ul li a {
+    color: #5c5c5c;
+    text-decoration: none;
+    transition: color 0.2s, transform 0.2s;
+    font-family: var(--fonte-primaria);
+}
+
+header nav.menu-desktop ul li a:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+
+/* Estiliza o container da imagem */
+.image-container {
+    width: 100vw; /* Faz o container ocupar toda a largura da viewport */
+    overflow: hidden; /* Garante que nada além do container seja exibido */
+    position: relative; /* Permite posicionar outros elementos em relação a este container */
+}
+
+.image-container img {
+    width: 100%; /* Faz a imagem preencher toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    object-fit: cover; /* Faz a imagem cobrir o container sem distorcer */
+    max-height: 80vh; /* Define uma altura máxima para a imagem, se necessário */
+}
+
+/* Estiliza a seção de input */
+.input {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 500px;
+    height: 100px;
+    position: relative; /* Muda para absolute para o posicionamento mais livre */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -30%); /* Ajusta para centralizar exatamente */
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    padding: 0.5em;
+    border-radius: 10px; /* Adiciona borda arredondada ao container */
+}
+
+/* Estiliza o input dentro da seção */
+.input input {
+    width: 300px;
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    color: #45474B;
+    font-size: 1rem;
+}
+
+.input button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1em; /* Espaço entre o input e o botão */
+}
+
+.input button:hover {
+    background-color: #263238; /* Escurece a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
+    justify-content: center; /* Alinha os itens ao centro quando há espaço extra */
+    gap: 30px; /* Espaço entre os itens */
+    width: 80%;
+    max-width: 90rem;
+    margin: 2rem auto; /* Centraliza horizontalmente com margem automática */
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-size: 15px;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    display: flex;
+    flex-direction: column; /* Organiza os itens verticalmente */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    width: 290px;
+    height: 250px; /* Ajuste conforme necessário */
+    margin-bottom: 5px; /* Espaço abaixo dos itens */
+    position: relative; /* Necessário para posicionar o botão */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: var(--azul-titulo);
+    padding: 0;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove a decoração do link */
+    color: var(--azul-titulo); /* Corrigido para usar a variável de cor */
+}
+
+/* Remove a decoração do link na classe btn-pesquisa */
+.btn-pesquisa a {
+    text-decoration: none; /* Garante que o link dentro da classe btn-pesquisa não tenha decoração */
+}
+
+/* Estiliza o link de informação no card */
+.info-pesquisa {
+    display: block;
+    margin-top: auto; /* Move o link para o final do card */
+    text-align: right; /* Alinha o texto à direita */
+    margin-bottom: 1em;
+    color: var(--azul-titulo); /* Corrigido para usar a variável de cor */
+}
+
+
+.btn-pesquisa {
+    position: absolute;
+    bottom: 10px; /* Espaço do fundo do card */
+    left: 10px; /* Espaço da esquerda do card */
+    margin: 0.5em;
+}
+
+button {
+    background: var(--azul-botoes);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 110px;
+    height: 40px;
+    display: flex; /* Flexbox para centralizar o texto */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    margin: 0.2rem 0;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .input {
+        width: 90%;
+        max-width: 400px;
+        position: static; /* Volta ao fluxo normal do documento em telas menores */
+        margin: 1em auto;
+        transform: none; /* Remove o ajuste de posição */
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .item-resultado{
+        max-width: 15em;
+        
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+
+    .descricao-meta{
+        font-size: 15px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .input {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1em;
+        width: 90%;
+        max-width: 300px;
+        margin: 1em auto;
+        transform: none; /* Remove o ajuste de posição */
+    }
+
+    .input input {
+        width: 80%;
+    }
+
+    .input button {
+        width: 40%;
+        margin-top: 0.5em;
+    }
+
+    .resultados-pesquisa {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
